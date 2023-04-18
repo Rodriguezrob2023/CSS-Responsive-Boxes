@@ -1,3 +1,42 @@
 body {
   background: peachpuff;
 }
+
+* {
+  border: 1px solid rgb(11, 0, 128);
+}
+
+div {
+  margin: 2em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+.a {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.b, .c, .d, .e, .f, .g {
+  flex-grow: 1;
+  width: 25%;
+}
+
+.h {
+  flex-grow: 3;
+}
+
+@media (min-width: 720px) {
+  .container {
+    flex-flow: row wrap;
+  }
+
+  .h {
+    width: 25%;
+  }
+
